@@ -12,6 +12,8 @@ Prerender adheres to google's `_escaped_fragment_` proposal, which we recommend 
 
 `Note` Make sure you have more than one webserver thread/process running because the prerender service will make a request to your server to render the HTML.
 
+`Note` This code has been modified so that Facebook's crawler does NOT trigger this prerenderer instead requests are forwarded normally to the Rails application as usual.
+
 Add this line to your application's Gemfile:
 
     gem 'prerender_rails'

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "telvue-prerender-rails"
-  spec.version       = "1.6.2"
+  spec.version       = "1.6.3"
   spec.authors       = ["Todd Hooper", "Ben Liu"]
   spec.email         = ["todd@prerender.io", "bliu@telvue.com"]
   spec.description   = %q{Rails middleware to prerender your javascript heavy pages on the fly by a phantomjs service}

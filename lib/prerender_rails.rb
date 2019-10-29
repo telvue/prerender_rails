@@ -9,7 +9,6 @@ module Rack
         'yahoo',
         'bingbot',
         'baiduspider',
-        'facebookexternalhit',
         'twitterbot',
         'rogerbot',
         'linkedinbot',
@@ -203,17 +202,6 @@ module Rack
       url = Rack::Request.new(new_env).url
       prerender_url = get_prerender_service_url()
       forward_slash = prerender_url[-1, 1] == '/' ? '' : '/'
-
-
-      if env['HTTP_USER_AGENT'].include?('facebookexternalhit')
-        if url.include?('?')
-          url = "#{url}&ua=fb_crawler"
-        else
-          url = "#{url}?ua=fb_crawler"
-        end
-      end
-
-
       "#{prerender_url}#{forward_slash}#{url}"
     end
 
