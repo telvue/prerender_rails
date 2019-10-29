@@ -1,7 +1,7 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "prerender_rails"
+  spec.name          = "telvue-prerender-rails"
   spec.version       = "1.6.2"
   spec.authors       = ["Todd Hooper", "Ben Liu"]
   spec.email         = ["todd@prerender.io", "bliu@telvue.com"]
